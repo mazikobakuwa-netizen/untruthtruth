@@ -1,0 +1,179 @@
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --ink:#0d0d0d;
+  --paper:#f5f0e8;
+  --red:#c0392b;
+  --gray:#6b6b6b;
+  --border:#2a2a2a; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Source Serif 4', serif;
+}
+
+nav {
+  border-bottom: 2px solid var(--border);
+  padding: 1rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wordmark {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+nav ul a:hover {
+  color: var(--red);
+}
+
+.hero {
+  padding: 6vw 5vw;
+  border-bottom: 2px solid var(--border);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem,6vw,5rem);
+    line-height: 1.05;
+  }
+
+.hero em {
+    color: var(--red);
+}
+
+.hero p {
+    margin-top: 1.5rem;
+    max-width: 500px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.collections {
+  padding: 5vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--border);
+}
+
+.card {
+  padding: 2rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.card tag {
+  font-family: "IBM Plex Mono";
+  font-size: 0.6rem;
+  letter-spacing: 0.2rem;
+  color: var(--gray);
+}
+
+.card title {
+  font-family: 'Playfair Display', serif;  
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.collection-hero {
+  padding: 5vw;
+  border-bottom: 2px solid var(--border);
+}
+
+.collection-hero h1 {
+  font-family: 'Playfair Display', serif;  
+  font-size: 3rem;
+}  
+
+.back {
+  font-family: "IBM Plex Mono";
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.back:hover {
+  color: var(--red);
+}
+
+.articles {
+  padding: 3rem 5vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article {
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+}
+
+.article h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  border-bottom: 2px solid var(--border);
+  padding: 3rem;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 0.7rem;
+}
+
+  
+
+  
+  
+   
+    
+  
