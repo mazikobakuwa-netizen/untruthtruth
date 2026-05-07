@@ -120,6 +120,11 @@ nav ul a:hover {
   color: var(--gray);
 }
 
+.card image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .card title {
   font-family: 'Playfair Display', serif;  
   font-size: 1.3rem;
