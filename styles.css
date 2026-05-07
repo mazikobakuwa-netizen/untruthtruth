@@ -69,6 +69,18 @@ nav ul a:hover {
   border-bottom: 2px solid var(--border);
 }
 
+.hero::before{
+  content:'';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero >* {
+  position: relative;
+  z-index: 1;
+}
+
 .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem,6vw,5rem);
