@@ -125,6 +125,7 @@ nav ul a:hover {
   height: auto%;
   object-fit: contain;
   display: block;
+  padding: 0;
 }
 .card title {
   font-family: 'Playfair Display', serif;  
