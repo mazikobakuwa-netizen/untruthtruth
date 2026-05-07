@@ -45,9 +45,6 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
-}
-
-nav ul {
     font-family: "IBM Plex Mono", monospace;
     font-size: 0.75rem;
     letter-spacing: 0.12em;
@@ -65,7 +62,7 @@ nav ul a:hover {
   background-size: cover;
   background-position:center;
   height: 500px;
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   padding: 6vw 5vw;
@@ -96,10 +93,13 @@ nav ul a:hover {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-auto-rows: 1fr;
   gap: 10px;
 }
 
 .card {
+  display: flex;
+  flex-direction: row;
   padding: 2rem;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -120,12 +120,12 @@ nav ul a:hover {
   color: var(--gray);
 }
 
-.card image {
+.card img {
   width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
+  aspect-ratio: 4/3;
+  object-fit: contain;
   display: block;
+  background: transparent;
   padding: 0;
 }
 .card title {
@@ -163,7 +163,7 @@ nav ul a:hover {
 .articles {
   padding: 3rem 5vw;
   display: grid;
-  grid-template-columns: repeat (3, 1fr);
+  grid-template-columns: repeat(3,1fr);
 }
 
 .article {
